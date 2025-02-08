@@ -16,6 +16,15 @@ def main():
   start = time.time()
   #calculate pi using the approximation technique
   #Loop until the level of percision is reached
+  approxPi = 4/1
+  sign = -1
+  denom = 3
+  while round(approxPi, 3) != round(realPi, 3): 
+      print(approxPi)
+      approxPi = approxPi + (sign * 4 / denom) 
+
+      sign = sign * -1 
+      denom = denom + 2
 
   end = time.time()
 
